@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-black);
+  color: var(--color-white);
+  width: 350px;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  padding: 0.5rem;
+  font-family: var(--font-text);
+  transition: 0.2s all;
+  text-align: center;
+  box-shadow: 0px 22px 42px -6px rgba(0, 0, 0, 0.55);
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+.siteBtn {
+  opacity: 0;
+  visibility: hidden;
+  display: unset;
+}
+
+.fontText {
+  text-align: center;
+  opacity: 0;
+  transition: all 0.1s;
+  margin: 0;
+  height: 0;
+}
+
+.project:hover .fontText {
+  text-align: center;
+  opacity: 1;
+  padding: 0.8rem 0.55rem 1.25rem;
+  margin: 0.2rem auto 2.5rem;
+}
+
+.project:hover .siteBtn {
+  opacity: 1;
+  visibility: visible;
+  height: 3rem;
+  width: 8rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3rem;
+  margin: 1rem;
+}
+
+.siteBtn {
+  border-radius: 2rem;
+  border: var(--color-white) solid;
+  transition: all 0.2s;
+  margin: 0;
+  padding: 0;
+}
+
+.siteBtn:hover {
+  background: var(--color-white);
+  cursor: pointer;
+  color: var(--color-black);
+}
+
+.project h2,
+h3 {
+  margin: 0.6rem;
+}
+
+.iconT {
+  height: 1.5rem;
+  filter: opacity(0.45) drop-shadow(0 0 0 white);
+  margin: 0.1rem auto 0.2rem;
+}
+
+.project img {
+  border-radius: 1rem;
+}

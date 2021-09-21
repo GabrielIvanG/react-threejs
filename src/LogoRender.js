@@ -1,5 +1,4 @@
-import * as THREE from 'three';
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { useLoader, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
@@ -19,7 +18,6 @@ export default function Model(props) {
   return (
     <group ref={group} {...props}>
       <scene name="Scene">
-        {console.log(gltf)}
         <mesh ref={mesh} name="Curve" rotation={[1.5, 0, 0]} scale={[30, 30, 30]}>
           <bufferGeometry attach="geometry" {...gltf.nodes.Curve.geometry} />
           <meshStandardMaterial

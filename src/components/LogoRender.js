@@ -1,9 +1,8 @@
-import * as THREE from 'three';
-import React, { Suspense, useRef } from 'react';
+import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import './logo.css';
 import Logo from '../LogoRender';
-import { OrbitControls, useHelper, SpotLight, Reflector } from '@react-three/drei';
+import { OrbitControls, SpotLight } from '@react-three/drei';
 
 function Lights() {
   return (

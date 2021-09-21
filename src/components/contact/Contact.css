@@ -1,0 +1,153 @@
+#sectionContact {
+  height: 100vh;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-text);
+  justify-content: center;
+}
+
+.compContainer {
+  display: flex;
+  background: var(--color-black);
+  width: 80%;
+  height: 80%;
+  border-radius: 1rem;
+  box-shadow: 0px 22px 42px -6px rgba(0, 0, 0, 0.55);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: var(--color-black);
+  border-radius: 1rem;
+  padding: 2rem;
+  background: var(--color-golden);
+  font-weight: bolder;
+  margin: 1rem;
+}
+
+.contactInfoSubtitle {
+  margin: 0;
+  padding: 1rem 0 1rem;
+}
+
+.contactInfoContent > * {
+  display: flex;
+  padding: 1rem 0 1rem;
+  margin-top: 2rem;
+}
+
+.contactInfoContent span {
+  margin-left: 1rem;
+}
+
+.contact-form {
+  padding: 2rem;
+  flex: 1 1 100%;
+}
+
+.contactSocialMedia {
+  display: flex;
+  height: 20rem;
+  align-items: flex-end;
+}
+
+.iconS {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.iconS:hover {
+  transform: scale(1.25);
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+
+.contactIcons {
+  font-size: 1.5rem;
+}
+
+.contactLocation {
+  align-items: center;
+}
+
+.contactWhatsapp {
+  align-items: center;
+}
+
+.contactEmail {
+  align-items: center;
+}
+
+/* SECOND PART */
+
+.contact-form {
+  display: flex;
+  color: var(--color-white);
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+
+.contact-form > * {
+  text-align: center;
+  padding: 0.5rem;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  padding: 1rem;
+}
+
+.contact-form input {
+  border-radius: 1rem;
+  height: 2rem;
+  outline: none;
+  text-align: center;
+}
+
+.messag {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem 1rem;
+  height: 40%;
+}
+.messag label {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+}
+
+.messag textarea {
+  border-radius: 1rem;
+  outline: none;
+  min-height: 80%;
+}
+
+#emailBtn {
+  font-family: var(--font-text);
+  background-color: var(--color-golden);
+  border: none;
+  display: block;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 40%;
+  border-radius: 4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--color-white);
+  transition: 0.2s all ease-in-out;
+}
+
+#emailBtn:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
